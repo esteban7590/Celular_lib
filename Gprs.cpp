@@ -10,18 +10,22 @@ Gprs::Gprs(int pwrpin, int statuspin, int srxpin, int stxpin){
   pinMode(pwrpin, OUTPUT);
   _pwrpin = pwrpin;
 
-  pinMode(statuspin, INPUT);
-  _statuspin = statuspin;
+  // pinMode(statuspin, INPUT_PULLUP);
+  // _statuspin = statuspin;
 
-  // if ((digitalRead(statuspin)) == LOW) {
-  //   digitalWrite(pwrpin, HIGH);
+  digitalWrite(_pwrpin, HIGH);
   //
-  //     while ((digitalRead(statuspin)) == LOW) {
-  //       delay(200);
+  // if ((digitalRead(_statuspin)) == HIGH) {
+  //
+  //
+  //     while ((digitalRead(_statuspin)) == HIGH) {
+  //       digitalWrite(_pwrpin, HIGH);
+  //       delay(500);
   //       }
   //
-  // digitalWrite(pwrpin, LOW);
+  //  digitalWrite(_pwrpin, LOW);
   // }
+
   SoftwareSerial gprs(srxpin ,stxpin);
   gprs.begin(9600);
 

@@ -1,0 +1,21 @@
+{
+  "name": "Celular_lib",
+  "keywords": "M95, gprs, http, POST, content_type",
+  "description": "Arduino Library for Ultrasonic sensor HY-SRF05)",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/esteban7590/Celular_lib.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Esteban Rojas",
+      "email": "esteban7590@hotmail.com"
+    }
+  ],
+
+  "version": "1.0.0",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
