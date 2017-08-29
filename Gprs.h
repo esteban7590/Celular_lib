@@ -12,7 +12,7 @@
 class Gprs
 {
   public:
-    Gprs(int, int, int, int);
+    Gprs(int pwrpin, int statuspin, int srxpin, int stxpin);
     void config(String type, String device, String variable, String token);
     void set_apn(String apn);
     void send(String ip, String port, int content);
